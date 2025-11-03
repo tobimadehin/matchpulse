@@ -1,4 +1,4 @@
-# ⚽ MatchPulse API
+# MatchPulse API
 
 [![Go Version](https://img.shields.io/badge/go-%3E%3D1.21-blue)](https://golang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -7,15 +7,7 @@
 
 > An advanced real-time football simulation API designed for testing dashboard applications, state management libraries, and real-time features. Features 90-second realistic matches, live player tracking, season management, and network condition simulation. Built by developers, for developers.
 
-## 🎯 Why MatchPulse Exists
-
-Real-world applications face challenges that static APIs can't simulate. MatchPulse provides:
-- **Realistic temporal patterns**: Data updates at different frequencies like real sports APIs
-- **Complex state relationships**: Player characteristics, match events, season progression
-- **Memory pressure testing**: Live player locations, audio-ready commentary, historical data
-- **Lifecycle management**: Full season cycles with teardown and restart
-
-## 🚀 Quick Start
+## Quick Start
 
 ### Try It Live
 Before setting up locally, explore the enhanced API:
@@ -36,7 +28,7 @@ go mod download
 # Start the server
 go run main.go
 
-# 🚀 Your matchpulse server is available on http://localhost:8080 
+# Your matchpulse server is available on http://localhost:8080 
 ```
 
 The API starts generating realistic match data immediately with:
@@ -45,33 +37,33 @@ The API starts generating realistic match data immediately with:
 - **Season progression** with automatic teardown and restart
 - **10 seasons of historical data** maintained in memory
 
-## 📊 Enhanced Data Flow & Simulation
+## Enhanced Data Flow & Simulation
 
 MatchPulse runs a sophisticated multi-layered simulation:
 
-### ⚡ Real-time Updates (2 seconds)
+### Real-time Updates (2 seconds)
 - Live player locations on the field (X,Y coordinates)
 - Match events (goals, cards, substitutions)
 - Audio-ready commentary with speed variations
 
-### 🔄 Frequent Updates (5-8 seconds)  
+### Frequent Updates (5-8 seconds)  
 - Match statistics (possession, shots, fouls)
 - Player ratings during matches
 - League table positions
 
-### 📈 Moderate Updates (12-15 seconds)
+### Moderate Updates (12-15 seconds)
 - Global statistics and aggregations
 - Season progress tracking
 - Player season statistics
 
-### 🏆 Lifecycle Events (Match/Season completion)
+### Lifecycle Events (Match/Season completion)
 - Season winners and historical records
 - Player of the season calculations
 - Complete data reset and new season start
 
-## 🎮 Advanced Features
+## Advanced Features
 
-### 🏃‍♂️ Live Player Tracking
+### Live Player Tracking
 Every match provides real-time player locations perfect for building live match visualizations:
 
 ```javascript
@@ -86,7 +78,7 @@ const fetchPlayerLocations = async (matchId) => {
 };
 ```
 
-### 📊 Player Characteristics System
+### Player Characteristics System
 Each player has permanent characteristics that affect match performance:
 
 ```json
@@ -103,7 +95,7 @@ Each player has permanent characteristics that affect match performance:
 }
 ```
 
-### 🏆 Season Management
+### Season Management
 Complete season lifecycle with historical tracking:
 
 - **18 matches per season** with realistic scheduling
@@ -114,7 +106,7 @@ Complete season lifecycle with historical tracking:
   - Championship winners
   - Season statistics
 
-### 🎵 Audio-Ready Commentary
+### Audio-Ready Commentary
 Commentary system designed for streaming audio integration:
 
 ```json
@@ -126,7 +118,7 @@ Commentary system designed for streaming audio integration:
 }
 ```
 
-## 🔧 API Reference
+## API Reference
 
 ### Example Endpoints
 
@@ -150,7 +142,7 @@ Commentary system designed for streaming audio integration:
 
 Complete API reference available on https://matchpulse-api.onrender.com/api-schema.txt
 
-## 🎮 How It Works - Complete Lifecycle
+## How It Works - Complete Lifecycle
 
 ### Application Startup
 ```
@@ -160,7 +152,7 @@ Complete API reference available on https://matchpulse-api.onrender.com/api-sche
 
 ### Match Lifecycle (90 seconds real-time)
 ```
-⚽ KICKOFF
+KICKOFF
 ├── Every 2 seconds: Update player positions
 ├── Every 2 seconds: Check for events (goals, cards, etc.)
 ├── Minute 45: Halftime break
@@ -173,11 +165,11 @@ Complete API reference available on https://matchpulse-api.onrender.com/api-sche
 ```
 
 
-## 🏗️ Contributing
+## Contributing
 
 MatchPulse thrives on community contributions. Here's how you can help:
 
-### 🐛 Found a Bug?
+### Found a Bug?
 
 1. **Search existing issues** to avoid duplicates
 2. **Create a detailed issue** with:
@@ -185,7 +177,7 @@ MatchPulse thrives on community contributions. Here's how you can help:
    - Steps to reproduce
    - Your environment (Go version, OS)
 
-### 💡 Feature Ideas
+### Feature Ideas
 
 We're especially interested in:
 - **Additional sports simulations** (basketball, tennis, etc.)
@@ -194,7 +186,7 @@ We're especially interested in:
 - **Advanced audio streaming features**
 - **Performance optimizations**
 
-### 🔧 Easy Contributions
+### Easy Contributions
 
 - Add teams from other leagues (MLS, Serie A, Bundesliga)
 - Expand player name diversity and nationalities
@@ -202,7 +194,7 @@ We're especially interested in:
 - Add new weather conditions and their effects
 - Create additional formation types
 
-### 🚀 Advanced Contributions
+### Advanced Contributions
 
 - Implement WebSocket support for real-time updates
 - Add configurable simulation parameters via API
@@ -210,56 +202,10 @@ We're especially interested in:
 - Implement referee decisions and VAR
 - Add crowd reaction simulation
 
-## 📊 Performance & Resource Usage
+## License
 
-MatchPulse is optimized for development use:
-
-- **Memory**: ~50MB baseline, +10MB per active season
-- **CPU**: Minimal impact with smart goroutine management  
-- **Network**: Optimized JSON responses with compression
-- **Persistence**: In-memory only, perfect for testing
-
-## 🤝 Community & Support
-
-### Getting Help
-- **Documentation Issues**: Search existing issues or create new ones
-- **Usage Questions**: Check examples in source code
-- **Feature Requests**: Use GitHub issues with detailed use cases
-
-### Showcase Your Project
-Built something awesome with MatchPulse? We'd love to feature it!
-- Open an issue with the "showcase" label
-- Tag a maintainer on X [@_techcyborg](https://x.com/_techcyborg)
-
-## 📄 License
-
-MatchPulse is open source software licensed under the [MIT License](LICENSE). You can:
-- Use it commercially or personally
-- Modify it for your needs  
-- Distribute your modifications
-- Include it in proprietary software
-
-## 🙏 Contributors
-
-MatchPulse exists because of contributions from developers worldwide:
-
-<!-- Contributors will be automatically updated -->
-<a href="https://github.com/tobimadehin/matchpulse-api/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=tobimadehin/matchpulse-api" />
-</a>
-
----
-
-<div align="center">
-
-**Built with ❤️ by the developer community**
-
-**Perfect for testing React, Vue, Angular, Svelte, Unity, Unreal Engine, Godot**
+MatchPulse is open source software licensed under the [MIT License](LICENSE). 
 
 [Report Bug](https://github.com/tobimadehin/matchpulse-api/issues) · 
 [Request Feature](https://github.com/tobimadehin/matchpulse-api/issues) · 
 [Join Discussion](https://github.com/tobimadehin/matchpulse-api/discussions)
-
-⭐ **Star this repo** if MatchPulse helps your development!
-
-</div>
