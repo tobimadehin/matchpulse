@@ -1,11 +1,11 @@
-# MatchPulse API
+# MatchPulse 
 
 [![Go Version](https://img.shields.io/badge/go-%3E%3D1.21-blue)](https://golang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/tobimadehin/matchpulse-api/pulls)
 
-> An advanced real-time football simulation API designed for testing dashboard applications, state management libraries, and real-time features. Features 90-second realistic matches, live player tracking, season management, and network condition simulation. Built by developers, for developers.
+> A real-time football simulation. Features 90-second matches, live player tracking, season management.
 
 ## Quick Start
 
